@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: FiananceMe
-          image: Amardeepmalale96/Devops-Project # Image that will be used to containers in the cluster
+          image: amardeepmalale96/fiananceme # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8070 # The port that the container is running on in the cluster
