@@ -1,12 +1,26 @@
-package com.reljicd;
+package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@SpringBootApplication
-public class ShoppingCartApplication {
+@Controller
+public class BankingController {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ShoppingCartApplication.class, args);
+    @GetMapping("/")
+    public String index(Model model) {
+        model.addAttribute("message", "Welcome to the Banking Domain Web Application");
+        return "index";
+    }
+
+    @GetMapping("/banking_fundamentals")
+    public String bankingFundamentals(Model model) {
+        model.addAttribute("fundamentals", getBankingFundamentals());
+        return "banking_fundamentals";
+    }
+
+    // Example method to get banking fundamentals
+    private String getBankingFundamentals() {
+        return "A bank is a financial institution...";
     }
 }
