@@ -1,21 +1,10 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+package com.reljicd;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ShoppingCartApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ShoppingCartApplication.class, args);
