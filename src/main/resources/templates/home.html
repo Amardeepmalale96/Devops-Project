@@ -1,23 +1,58 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <div th:replace="/fragments/header :: header"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Industry</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+        <h1>Healthcare Industry Overview</h1>
+    </header>
 
-<div th:replace="/fragments/header :: navbar"/>
+    <nav>
+        <ul>
+            <li><a href="#what-is-healthcare">What is Healthcare?</a></li>
+            <li><a href="#importance">Importance of Healthcare</a></li>
+            <li><a href="#classification">Classification</a></li>
+            <li><a href="#delivery">Delivery of Healthcare</a></li>
+            <li><a href="#medical-tourism">Medical Tourism</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
+    <section id="what-is-healthcare">
+        <h2>What is Healthcare?</h2>
+        <p>Healthcare is the diagnosis, treatment, and prevention of disease, illness, injury, and other physical and mental impairments in humans. It is delivered by practitioners in various fields like medicine, nursing, pharmacy, and more.</p>
+    </section>
 
-    <div th:replace="/fragments/products :: products"/>
+    <section id="importance">
+        <h2>Importance of Healthcare</h2>
+        <p>The healthcare industry is crucial to individuals worldwide, playing a significant role in improving the quality of life. It includes various players like hospitals, doctors, and diagnostic labs.</p>
+    </section>
 
-    <div th:replace="/fragments/pagination :: pagination(URLparameter='/home')"/>
+    <section id="classification">
+        <h2>Classification of Healthcare Industry</h2>
+        <p>The modern healthcare sector is divided into sub-sectors like:</p>
+        <ul>
+            <li>Hospital Activities</li>
+            <li>Medical and Dental Practice</li>
+            <li>Other Human Health Activities (physiotherapy, pathology clinics, etc.)</li>
+        </ul>
+    </section>
 
-</div>
+    <section id="delivery">
+        <h2>Delivery of Healthcare Services</h2>
+        <p>Healthcare services are delivered in various ways, including face-to-face consultations or remote options like telehealth through video calls or messaging.</p>
+    </section>
 
-<div th:replace="/fragments/footer :: footer"/>
+    <section id="medical-tourism">
+        <h2>Medical Tourism</h2>
+        <p>Medical tourism involves traveling across borders to obtain healthcare services, often for elective or specialized surgeries. Over 50 countries have identified medical tourism as a national industry.</p>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Healthcare Knowledge Portal</p>
+    </footer>
 </body>
 </html>
